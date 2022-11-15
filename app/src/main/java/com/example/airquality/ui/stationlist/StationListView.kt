@@ -8,7 +8,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 
 @Composable
 fun StationListScreen() {
-    val viewModel : StationListViewModel=hiltViewModel()
+    val viewModel : StationListViewModel = hiltViewModel()
 
     LazyColumn(){
         items(viewModel.state.stations){
